@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-carbon text-white font-body antialiased;
+  background-image: radial-gradient(circle at top, rgba(208, 2, 27, 0.22), transparent 35%);
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-heading tracking-wide;
+}
+
+.section-subtitle {
+  @apply mt-4 text-base md:text-lg text-zinc-300 max-w-3xl;
+}
+
+.panel {
+  @apply rounded-2xl border border-zinc-800 bg-zinc-900/60 backdrop-blur;
+}
